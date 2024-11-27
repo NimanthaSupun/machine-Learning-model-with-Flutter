@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "943767529394",
+    "project_id": "textml-53f7e",
+    "storage_bucket": "textml-53f7e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943767529394:android:046cfe6312057e139126ab",
+        "android_client_info": {
+          "package_name": "com.example.textml"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXIdi440bWvCd3YitQyPEbA6XyZ2djc1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
