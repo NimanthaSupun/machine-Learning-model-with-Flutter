@@ -26,9 +26,12 @@ class ImagePreview extends StatelessWidget {
                 color: Colors.orangeAccent,
               ),
             )
-          : Image.file(
-              File(imagePath!),
-              fit: BoxFit.contain,
+          : Padding(
+              padding: const EdgeInsets.all(10),
+              child: Image.file(
+                File(imagePath!),
+                fit: BoxFit.contain,
+              ),
             ),
     );
   }
