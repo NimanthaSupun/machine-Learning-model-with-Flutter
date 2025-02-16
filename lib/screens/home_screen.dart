@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:textml/screens/document_scanner_view.dart';
 import 'package:textml/widgets/image_preview.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -130,6 +131,22 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>   DocumentScannerPage(),
+                ),
+              );
+            },
+            child: const Icon(Icons.message),
+          ),
+        ],
+      ),
       appBar: AppBar(
         title: const Text("ML Text Recogition"),
       ),
